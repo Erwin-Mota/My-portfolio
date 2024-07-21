@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>
+        Contact Information
+     </title>   
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+
+     <style>
+        .home-page{
+            padding:10px 10px 10px 10px;
+            font-size:20px;
+            margin-bottom:100px;
+            border-radius:50%;
+            border:none;
+            transition:opacity 1s;
+            transition:padding 1.5s;
+            
+        }
+        .home-page:hover{
+            cursor:pointer;
+            padding:15px 15px 15px 15px;
+            opacity:.8;
+        }
+        .home-page:active{
+            cursor:grab;
+            opacity:.6;
+        }
+       * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .contact_me{
+            position:relative;
+            min-height:100vh;
+            padding:50px 100px;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction:column;
+            background:url(background5.jpg);
+            background-size:cover;
+
+        }
+        .contact_me .data{
+            max-width:1000px;
+            text-align:center;
+        }
+         h1{
+            font-size:40px;
+            font-weight:600;
+            color:white;
+
+        }
+        h2{
+            font-size:25px;
+            font-weight:400;
+        }
+        p
+        {
+            font-size:20px;
+            font-weight:300;
+            color:aliceblue;
+        }
+        .container{
+            margin-top:40px;
+        }
+        .contact_info{
+            width:60%;
+        }
+        .border{
+            position:relative;
+            padding:20px 0;
+            display:flex;
+        }
+        .icons{
+            min-width:60px;
+            height:60px;
+            background-color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border-radius:50%;
+            font-size:30px;
+        }
+        .text{
+            color:white;
+        }
+
+     </style>
+    </head>
+    <body>
+       
+        <section class="contact_me">
+            <a href="home.html">
+                <button class="home-page">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </button>
+            </a>
+        <div class="data">
+            <h1> My Contact Information:</h1>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="contact_info">
+                <div class="border">
+                    <div class="icons"><i class="fa-solid fa-map-pin"></i></div>
+                    <div class="text">
+                        <h2>Location</h2>
+                        <p> San Francisco Bay Area</p>
+                    </div> 
+                </div>
+                <div class="border">
+                    <div class="icons"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h2>Email</h2>
+                        <p> Erwin.motallebii@gmail.com</p>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="icons"><i class="fa-solid fa-phone-volume"></i></div>
+                    <div class="text">
+                        <h2>Phone number</h2>
+                        <p> +1 408-610-0655</p>
+                    </div>
+                </div>
+                <div class="border">
+                    <div class="icons"><i class="fa-brands fa-square-instagram"></i></div>
+                    <div class="text">
+                        <h2>Instagram</h2>
+                        <p> Erwin_motall</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+    </body>
+
+
+</html>

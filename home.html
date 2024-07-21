@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="My Portfolio">
+        <title>
+            My Portfolio
+        </title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+       
+        <style>
+           
+            h1{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align:center;
+                font-weight:bold;
+                font-size:30px;  
+                color:rgb(230, 220, 220);
+            }
+            .web-body{
+                background-color: rgb(93, 85, 85);
+            }
+            .header{
+                background-color: rgb(123, 114, 130);
+                padding: 10px 30px 10px 30px;
+            }
+            .table{
+                background-color:rgb(82,69,82);
+            }
+            .row-table{
+                background-color:rgb(174, 163, 163);
+            }
+            .table1{
+                background-color: rgb(82,69,82);
+            }
+            .table1_2{
+                background-color:rgb(11,11,11);
+                margin-top:0;
+        
+            }
+            .table2{
+                background-color: rgb(82, 69, 82);
+            }
+            .title-line{
+                margin-bottom:0;
+            }
+            .name{
+                color:white;
+            }
+            .major{
+                color:rgb(192, 185, 185);  
+            }
+            .student{
+                color:aliceblue;
+                text-align:center;
+            }
+            .home-link{
+                color:aliceblue;
+            }
+            .about-link{
+                color:aliceblue;
+            }
+            .contact-link{
+                color:aliceblue;
+            }
+            .project-link{
+                color:aliceblue;
+            }
+            .mypic{
+                border-radius:40%;
+                height:400px;
+            }
+            .linkedin-button{
+                margin-top:10px;
+                margin-bottom:10px;
+                padding:20px 20px 20px 20px;
+                background-color:rgb(10,102,194);
+                color:rgb(0, 0, 0);
+                border:none;
+                border-radius:20px;
+                font-family:arial;
+                font-weight:bold;
+                font-size:30px;
+                transition:opacity 1s;
+                transition:padding-right 1s, padding-left 1s;
+            }
+            .linkedin-button:hover{
+                cursor:pointer;
+                opacity:.8;
+                padding-right:30px;
+                padding-left:30px;
+            }
+            .linkedin-button:active{
+                opacity:.6;
+                cursor:grab;
+            }
+            .insta{
+                margin-top:10px;
+                margin-bottom:10px;
+                padding:20px 20px 20px 20px;
+                background-color:rgb(91, 81, 216);
+                color:rgb(0, 0, 0);
+                border:none;
+                border-radius:20px;
+                font-family:arial;
+                font-weight:bold;
+                font-size:30px;
+                transition:opacity 1s;
+                transition:padding-right 1s, padding-left 1s;
+            }
+            .insta:hover{
+                cursor:pointer;
+                opacity:.8;
+                padding-right:30px;
+                padding-left:30px;
+            }
+            .insta:active{
+                opacity:.6;
+                cursor:grab;
+            }
+            .Github{
+                margin-top:10px;
+                margin-bottom:10px;
+                padding:20px 20px 20px 20px;
+                background-color:rgb(110,84,148);
+                color:rgb(0, 0, 0);
+                border:none;
+                border-radius:20px;
+                font-family:arial;
+                font-weight:bold;
+                font-size:30px;
+                transition:opacity 1s;
+                transition:padding-right 1s, padding-left 1s;
+            }
+            .Github:hover{
+                cursor:pointer;
+                opacity:.8;
+                padding-right:30px;
+                padding-left:30px;
+            }
+            .Github:active{
+                opacity:.6;
+                cursor:grab;
+            }
+            .compose-email{
+                margin-top:10px;
+                margin-bottom:10px;
+                padding:20px 20px 20px 20px;
+                background-color:rgb(121, 31, 87);
+                color:rgb(0, 0, 0);
+                border:none;
+                border-radius:20px;
+                font-family:arial;
+                font-weight:bold;
+                font-size:30px;
+                transition:opacity 1s;
+                transition:padding-right 1s, padding-left 1s;
+            }
+            .compose-email:hover{
+                cursor:pointer;
+                opacity:.8;
+                padding-right:30px;
+                padding-left:30px;
+            }
+            .compose-email:active{
+                opacity:.6;
+                cursor:grab;
+            }
+            .fade-in{
+                animation:fadeAndScale 1.7s cubic-bezier(.48,.23,.39,1.26);
+                transform-origin: center;
+            }
+            @keyframes fadeAndScale{
+                from{
+                    opacity:0;
+                    transform:scale3d(.75,.75,1);
+        
+                }
+                to{
+                    opacity:1;
+                    transform:scale3d(1,1,1);
+        
+                }
+        
+            }
+            .my-pic{
+            display: block;
+            align-items: center; 
+            float:left;
+            }
+            .About-me{
+                display:block;
+                float:right;
+            }
+            .my-description{
+                font-size:17px;
+                color:aliceblue;
+                line-height:25px;
+                width:800px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .Skills{
+                margin-top:0;
+                color:antiquewhite;
+                font-size:35px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .skill1{
+                margin-right:300px;
+                float:right;
+                display:flex;
+            }
+            .skill-list{
+                margin-top:30px;
+                font-size:20px;
+                color:whitesmoke;
+            }
+             
+            
+        </style>
+    </head>
+
+    <body class="web-body">
+        <!-- Start of home page-->
+         <header class="header">
+            <nav>
+                <div>
+                <h1 class="fade-in">Welcome to my website, Explore my portfolio</h1>
+
+                <hr class="title-line"/>
+                </div>
+            </nav>
+        </header>
+         <table class="table" border="0" width="100%" cellpadding="0">
+            <tr>
+                <td>
+                    <table class="row-table" border="0" width="50%" cellpadding="15" cellspacing="0" align="center">
+                        <tr>
+                            <td>
+                                <a class="home-link" href="home.html">Home</a>
+                            </td>
+                            <td>
+                                <a class="contact-link" href="contact-info.html">Contact info</a>
+                            </td>
+                            <td>
+                                <a class="project-link" href="my-projects.html">Projects</a>
+                            </td>
+                            <td>
+                                <a class="about-link" href="Soccer-game.html" target="_blank">Soccer animation</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+         </table>
+         
+
+         <table class="table1" border="0" width="100%" cellpadding="0" cellspacing="0">
+                <td>
+                    <table class="table1_2" border="0" width="50%" cellpadding="0" cellspacing="0" align="center" height="100%">
+                        <tr>
+                            <td align="center" height="200">
+                            <marquee direction="left" scrollamount="8" behavior="alternate" >
+                                <div class="name" >
+                                    <h2>
+                                        Erwin Motallebi
+                                    </h2>
+                                </div>
+                            </marquee>
+
+                            <marquee direction="right" scrollamount="8" behavior="alternate">
+                                <div class="major">
+                                    <h3>
+                                        Computer Engineering student
+                                    </h3>
+                                </div>
+                                
+                            </marquee>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+         </table>
+
+         <table class="table2" border="0" width="100%" cellpadding="0" cellspacing="0">
+            <td>
+                <table class="table2_1" border="0" width="40%" cellpadding="5" cellspacing="0" align="center">
+                    <tr>
+                        <td>
+                            
+                            <a href="https://www.linkedin.com/in/erwin-motallebi/" target="_blank">
+                                <Button class="linkedin-button">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                  </Button> 
+                             </a> 
+                        </td>
+                        <td>
+                             <a href="https://www.instagram.com/erwin_motall/" target="_blank">
+                                <button class="insta">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </button>
+                             </a>
+                        </td>
+                        <td>
+                            <a href="https://github.com/Erwin-Mota/" target="_blank">
+                                <button class="Github">
+                                    <i class="fa-brands fa-github"></i>
+                                </button>
+                            </a>
+                        </td>
+                        <td>
+                            <a href= "mailto:erwin.motallebii@gmail.com"target="_blank">
+                                <button class="compose-email">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </button>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+     </table>
+
+     <div class="my-pic">
+        <h1 class="pic-header">Me:</h1>
+        <img class="mypic" src="img/me.jpg">
+     </div>
+     <div class="About-me">
+        <h1 class="about">About me</h1>
+        <hr>
+        <br>
+        <p class="my-description">I'm a second year undergraduate student with an interest in Web development, Software Engineering, Software development,
+            Data analysis, and Information technology. I am currently pursuing a <strong>Computer engineering</strong> degree at the <strong>University of California, Santa Cruz</strong>.
+        </p>
+        <hr>
+        </div>
+        <div class="skill1">
+            <h2 class="Skills"> Skills:</h2>
+        <ul class="skill-list">
+            <li>Html</li>   
+            <li>Css</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Risc-v Assembly</li>
+            <li>Web Development</li>
+            <li>Business Analysis</li>
+            <li>Social Media Marketing</li>
+            <li>Affiliate Marketing</li>
+
+        </ul>
+        </div>
+        
+     
+      
+     
+     
+
+     
+         
+      
+                  
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Projects
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <style>
+            .body-projects{
+                background-color: black;
+            }
+            .header-projects{
+                color:aliceblue;
+                text-align:center;
+                font-size:50px;
+                animation:fadeAndScale 1.7s cubic-bezier(.48,.23,.39,1.26);
+                transform-origin: center;
+            }
+            .home{
+                padding:20px 20px 20px 20px;
+                font-size:30px;
+                left:50%;
+                position: absolute;
+                transform: translateX(-50%);
+                background-color: aliceblue;
+                border-radius:10px;
+                border:none;
+                transition:opacity 1s;
+                transition:padding 1s;
+          
+            }
+            .home:hover{
+                cursor:pointer;
+                opacity:.8;
+                padding: 25px 25px 25px 25px;
+
+            }
+            .container{
+                border: 1px solid black;
+                height: 200px;
+                position: relative;
+            }
+            
+            @keyframes fadeAndScale{
+                from{
+                    opacity:0;
+                    transform:scale3d(.75,.75,1);
+        
+                }
+                to{
+                    opacity:1;
+                    transform:scale3d(1,1,1);
+        
+                }
+            }
+        </style>
+    </head>
+
+    <body class="body-projects">
+
+        <h1 class="header-projects">
+            Coming soon
+            <hr>
+        </h1>
+        <div class="container">
+            <a href="home.html">
+                <button class="home">
+                    <i class="fa-solid fa-house"></i>
+                </button>
+            </a>
+        </div>
+        
+
+    </body>
+</html>

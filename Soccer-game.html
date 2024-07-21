@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Soccer animation
+        </title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                overflow:hidden;
+                box-sizing: border-box;
+                background-image:url(field2.jpg);
+                background-size:cover;
+                background-repeat:no-repeat;
+                flex:1;
+                
+
+            }
+            .marq{
+                height:100vh;
+            }
+            .ball{
+             max-width: 200px;
+                animation: animate 4s linear infinite;
+            }
+            @keyframes animate{
+                0%{
+                    transform:rotate(0deg);
+                }
+                100%{
+                    transform:rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <marquee class="marq" behavior="alternate" scrollamount="40">
+                <marquee class="marq" behavior="alternate" scrollamount="40" direction="down">
+                    <img src="soccerball.png" class="ball">
+            </marquee>
+        </section>
+    </body>
+</html>
